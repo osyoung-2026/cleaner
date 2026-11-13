@@ -1,0 +1,26 @@
+# 배포 · 실행 부산물
+.vercel/
+node_modules/
+.env
+.env.*
+
+# 어디에도 올리지 않는다 (저장소에도, 배포에도)
+tools/answer/
+정리본/
+진단/
+
+# 저장소 목록에 없는 것 (정리기 화면 · rules/ · data/ · README · 정리/ 코드만 올린다)
+tools/
+.claude/
+
+# csv · xlsx 는 data/ 의 예시 파일만 올린다. 그 밖의 표 파일은 어디에도 올리지 않는다
+*.csv
+*.xlsx
+*.xls
+*.xlsm
+!data/*.csv
+!data/*.xlsx
+
+# 정리/ 는 코드만
+정리/*
+!정리/*.py
